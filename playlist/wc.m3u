@@ -98,11 +98,15 @@ http://vca.easy747.com/live/donad220/8U01MGV/194519.m3u8
 http://vca.easy747.com/live/donad220/8U01MGV/69086.m3u8
 
 #======  FOX ============
-#EXTINF:-1 tvg-logo="https://imgur.com/MI6RRUR",FOX (Events only)
+#EXTINF:-1 tvg-logo="https://i.imgur.com/MI6RRUR.png",FOX (Events only)
 http://vca.easy747.com/donad220/8U01MGV/1436344
+#EXTINF:-1 tvg-logo="https://i.imgur.com/MI6RRUR.png",FOX (Events only)
 https://raw.githubusercontent.com/tuhin0408/OopsTv/refs/heads/main/s3/2095902.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/MI6RRUR.png",FOX (Events only)
 https://raw.githubusercontent.com/tuhin0408/OopsTv/refs/heads/main/s3/2095901.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/MI6RRUR.png",FOX (Events only)
 https://raw.githubusercontent.com/tuhin0408/OopsTv/refs/heads/main/s3/2095900.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/MI6RRUR.png",FOX (Events only)
 https://raw.githubusercontent.com/tuhin0408/OopsTv/refs/heads/main/s3/2095899.m3u8
 
 
@@ -120,13 +124,13 @@ https://1nyaler.streamhostingcdn.top/stream/26/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/N09UZWA.png",TSN1ᶠᴴᴰ
 http://vca.easy747.com/donad220/8U01MGV/42917
 #EXTINF:-1 tvg-logo="https://i.imgur.com/N09UZWA.png",TSN1ᶠᴴᴰ
-https://raw.githubusercontent.com/tuhin0408/OopsTv/refs/heads/main/spo-s5-n/902070.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/N09UZWA.png",TSN1ᶠᴴᴰ
 http://rgkkw.live/live/1Aoen7elp5/IgMJ60tmAa/748388.ts
 #EXTINF:-1 tvg-logo="https://i.imgur.com/N09UZWA.png",TSN1ᶠᴴᴰ
 http://starhub.pro/live/farhat-3379/67897-913379/748388.ts
 #EXTINF:-1 tvg-logo="https://i.imgur.com/N09UZWA.png",TSN1ᶠᴴᴰ
 http://fastshare1.com/live/25711345/late8airline/748388.ts
+#EXTINF:-1 tvg-logo="https://i.imgur.com/N09UZWA.png",TSN1ᴴᴰ
+https://raw.githubusercontent.com/tuhin0408/OopsTv/refs/heads/main/spo-s5-n/902070.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/N09UZWA.png",TSN1ᴴᴰ
 https://instreams.pro/EU/HDWC1/tracks-v1a1/mono.m3u8|referer=https://instream.click/&origin=https://instream.click
 #EXTINF:-1 tvg-logo="https://i.imgur.com/N09UZWA.png",TSN SPORTSᴴᴰ
