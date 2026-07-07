@@ -27,7 +27,7 @@ jobs:
 
     - name: Generate M3U Playlist
       env:
-        XTREAM_SERVERS: ${{ secrets::XTREAM_SERVERS }}
+        XTREAM_SERVERS: ${{ secrets::XTREAMSERVERS }}
       run: python generate_m3u.py
 
     - name: Commit and Push Changes
