@@ -9,7 +9,7 @@ def fetch_and_filter():
         print("Error: XTREAM_SERVERS secret is empty or missing.")
         return
 
-try:
+    try:
         servers = json.loads(servers_json)
     except json.JSONDecodeError as je:
         print("❌ Error: XTREAM_SERVERS formatting is invalid JSON.")
@@ -52,7 +52,6 @@ try:
                     logo = item.get("stream_icon", "")
 
                     # Construct structural Xtream streaming link format
-                    # Format: http://domain:port/username/password/stream_id.ts
                     stream_url = f"{base_url}/{user}/{passwd}/{stream_id}.{container}"
                     
                     # Generate standard M3U track entry
