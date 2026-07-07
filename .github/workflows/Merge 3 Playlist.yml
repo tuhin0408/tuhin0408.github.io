@@ -36,8 +36,8 @@ jobs:
 
       - name: Download and clean TF.m3u
         run: |
-          curl -s "https://raw.githubusercontent.com/BINOD-XD/Toffee-Auto-Update-Playlist/refs/heads/main/toffee_NS_Player.m3u" | \
-          grep -E -v "Developed by|Telegram|Last Updated|Live Matches|======" > TF.m3u
+          curl -s "https://raw.githubusercontent.com/sm-monirulislam/Toffee-Auto-Update-Playlist/refs/heads/main/OTT_Navigator.m3u" | \
+          grep -E -v "Developed by|Telegram|Last Updated|All channel|======" > TF.m3u
 
       - name: Commit and push changes
         run: |
