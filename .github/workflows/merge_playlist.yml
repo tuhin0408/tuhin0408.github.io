@@ -34,8 +34,16 @@ jobs:
 
         urls = [
             "https://raw.githubusercontent.com/tuhin0408/GlobalStream-IPTV/refs/heads/main/playlist/wc.m3u",
-            "https://aponn.vercel.app/iptv.m3u",
             "https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/refs/heads/main/World_Cup.m3u"
+        ]
+
+        # Lines containing these keywords will be filtered out
+        banned_keywords = [
+            "Developed by:",
+            "Telegram:",
+            "Last Updated:",
+            "Channels Count:",
+            "Usage:"
         ]
 
         # Ignore basic SSL verification issues if they arise
@@ -61,6 +69,10 @@ jobs:
                         if not line_stripped or line_stripped == "#EXTM3U":
                             continue
                         
+                        # Skip text containing any of our banned banner keywords
+                        if any(keyword in line_stripped for keyword in banned_keywords):
+                            continue
+
                         # If it is metadata (#EXTINF, etc.), store it temporarily
                         if line_stripped.startswith("#"):
                             current_metadata.append(line_stripped)
@@ -89,7 +101,7 @@ jobs:
     - name: Commit and Push changes
       run: |
         git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
         
         # Track the specific folder and file
         git add playlist/sports.m3u
