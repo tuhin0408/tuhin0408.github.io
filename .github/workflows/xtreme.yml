@@ -1,0 +1,40 @@
+name: Generate Xtream World Cup Playlist
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Triggers every day at midnight UTC
+  workflow_dispatch: # Allows you to run it manually anytime with 1-click
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Grants GitHub Action permissions to push code changes
+
+    steps:
+    - name: Check out Repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
+
+    - name: Generate M3U Playlist
+      env:
+        XTREAM_SERVERS: ${{ secrets::XTREAM_SERVERS }}
+      run: python generate_m3u.py
+
+    - name: Commit and Push Changes
+      run: |
+        git config --global user.name "Github Actions Bot"
+        git config --global user.email "actions@github.com"
+        git add fifa_worldcup.m3u
+        # Commit only if files have changed to prevent throwing errors
+        git diff-index --quiet HEAD || git commit -m "Automated Playlist Sync: FIFA World Cup channels updated"
+        git push
