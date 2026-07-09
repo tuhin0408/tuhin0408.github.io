@@ -1063,10 +1063,10 @@ http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/641956.ts
 http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/2279.ts
 #EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/2278.jpg" group-title="Server 5-FIFA",UK Fox News HD
 http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/2278.ts
-#EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/735113.jpg" group-title="Server 5-FIFA",US (Peacock 018) | High Diving World Cup: Italy 1 (2026-07-11 05:02:00)
-http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/735113.ts
-#EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/735126.jpg" group-title="Server 5-FIFA",US (Peacock 031) | High Diving World Cup: Italy 2 (2026-07-12 05:02:00)
-http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/735126.ts
+#EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/735109.jpg" group-title="Server 5-FIFA",US (Peacock 014) | High Diving World Cup: Italy 1 (2026-07-11 05:02:00)
+http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/735109.ts
+#EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/735122.jpg" group-title="Server 5-FIFA",US (Peacock 027) | High Diving World Cup: Italy 2 (2026-07-12 05:02:00)
+http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/735122.ts
 #EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/21561.jpg" group-title="Server 5-FIFA",USA Fox Business (SD)
 http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/21561.ts
 #EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/3730.jpg" group-title="Server 5-FIFA",USA FOX Business Network (SHD)
@@ -1123,24 +1123,14 @@ http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/40630.ts
 http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/429798.ts
 #EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/638806.jpg" group-title="Server 5-FIFA",USA LiveNOW from FOX
 http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/638806.ts
-#EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/21824.jpg" group-title="Server 5-FIFA",Soccer04: Argentina vs Egypt ( TyC Sports Argentina Feed ) @ 12:00 pm
-http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/21824.ts
-#EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/21825.jpg" group-title="Server 5-FIFA",Soccer05: Argentina vs Egypt ( FOX Network Feed ) @ 12:00 pm
-http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/21825.ts
-#EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/21826.jpg" group-title="Server 5-FIFA",Soccer06: Argentina vs Egypt ( Telemundo Feed ) @ 12:00 pm
+#EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/21812.jpg" group-title="Server 5-FIFA",Soccer02: Vancouver FC vs CF Montréal ( Fox Soccer Plus Feed ) @ 10:00 pm
+http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/21812.ts
+#EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/21823.jpg" group-title="Server 5-FIFA",Soccer03: Vancouver FC vs CF Montréal ( FOX One Feed ) @ 10:00 pm
+http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/21823.ts
+#EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/21826.jpg" group-title="Server 5-FIFA",Soccer06: Vancouver Whitecaps vs Cavalry ( Fox Sports 2 USA Feed ) @ 10:30 pm
 http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/21826.ts
-#EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/21827.jpg" group-title="Server 5-FIFA",Soccer07: Argentina vs Egypt ( Telemundo Deportes En Vivo Feed ) @ 12:00 pm
-http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/21827.ts
-#EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/21828.jpg" group-title="Server 5-FIFA",Soccer08: Argentina vs Egypt ( FOX One Feed ) @ 12:00 pm
+#EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/21828.jpg" group-title="Server 5-FIFA",Soccer08: Vancouver Whitecaps vs Cavalry ( FOX One Feed ) @ 10:30 pm
 http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/21828.ts
-#EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/21834.jpg" group-title="Server 5-FIFA",Soccer14: Switzerland vs Colombia ( FOX Network Feed ) @ 4:00 pm
-http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/21834.ts
-#EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/21835.jpg" group-title="Server 5-FIFA",Soccer15: Switzerland vs Colombia ( Telemundo Feed ) @ 4:00 pm
-http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/21835.ts
-#EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/21836.jpg" group-title="Server 5-FIFA",Soccer16: Switzerland vs Colombia ( Telemundo Deportes En Vivo Feed ) @ 4:00 pm
-http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/21836.ts
-#EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/21838.jpg" group-title="Server 5-FIFA",Soccer18: Switzerland vs Colombia ( FOX One Feed ) @ 4:00 pm
-http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/21838.ts
 #EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/3889.jpg" group-title="Server 5-FIFA",USA Telemundo 51 WSCV
 http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/3889.ts
 #EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/2401.jpg" group-title="Server 5-FIFA",USA Telemundo Boston WNEU
