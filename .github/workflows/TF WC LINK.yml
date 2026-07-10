@@ -17,58 +17,64 @@ jobs:
       - name: Fetch Latest Source Playlist and Extract Edge Cache
         run: |
           # 1. Download the target playlist file
-          curl -s "https://raw.githubusercontent.com/srhady/toffee-bd/refs/heads/main/toffee_playlist.m3u" -o source.m3u
+          curl -s -A "Mozilla/5.0" "https://raw.githubusercontent.com/srhady/toffee-bd/refs/heads/main/toffee_playlist.m3u" -o source.m3u
 
-          # 2. Print the first 40 lines to the log for easy debugging if it fails
-          echo "=== SHOWING SOURCE PLAYLIST SNAPSHOT ==="
-          head -n 40 source.m3u
-          echo "========================================"
+          # 2. Write Python script to specifically extract edge-cache-token strings
+          cat << 'EOF' > extract.py
+import re
+import sys
 
-          # 3. Flexible extraction logic
-          TOKEN=$(python3 -c '
-          import re
-          
-          with open("source.m3u", "r", encoding="utf-8") as f:
-              content = f.read()
-          
-          token = ""
-          
-          # Strategy A: Look specifically around your channel ID block
-          if "V__o054BObUt2AG6LL5C" in content:
-              # Grab the chunk of text right after your channel ID to find its URL
-              segment = content.split("V__o054BObUt2AG6LL5C")[1][:1000]
-              match = re.search(r"(\?edge-cache=[^\s\"'\''#]+)", segment)
-              if match:
-                  token = match.group(1)
-          
-          # Strategy B: If ID is missing/changed, fallback to grabbing ANY fresh edge-cache token in the file
-          if not token:
-              match = re.search(r"(\?edge-cache=[^\s\"'\''#]+)", content)
-              if match:
-                  token = match.group(1)
-          
-          print(token)
-          ')
+try:
+    with open("source.m3u", "r", encoding="utf-8") as f:
+        content = f.read()
+except Exception as e:
+    print(f"Error reading source file: {e}", file=sys.stderr)
+    sys.exit(1)
+
+token = ""
+
+# Strategy A: Target the block right after your channel ID
+if "V__o054BObUt2AG6LL5C" in content:
+    try:
+        segment = content.split("V__o054BObUt2AG6LL5C")[1][:1200]
+        match = re.search(r"edge-cache-token=[^\s\"'#]+", segment)
+        if match:
+            token = "?" + match.group(0)
+    except Exception:
+        pass
+
+# Strategy B Fallback: Grab the first valid edge-cache-token string anywhere in the playlist
+if not token:
+    match = re.search(r"edge-cache-token=[^\s\"'#]+", content)
+    if match:
+        token = "?" + match.group(0)
+
+if token:
+    print(token)
+EOF
+
+          # 3. Execute script and register token
+          TOKEN=$(python3 extract.py)
 
           echo "Extracted Token: $TOKEN"
 
           if [ -z "$TOKEN" ]; then
-            echo "Error: Could not extract edge-cache token from source."
+            echo "Error: Could not extract edge-cache-token from source."
             exit 1
           fi
 
-          # 4. Update TF-1.m3u8 and TF-6.m3u8 inside playlist/TF/
+          # 4. Replace token safely inside target files
           TARGET_DIR="playlist/TF"
           
           if [ -f "$TARGET_DIR/TF-1.m3u8" ]; then
-            sed -i -E "s/\?edge-cache=[^\"' ]*/$TOKEN/g" "$TARGET_DIR/TF-1.m3u8"
+            sed -i -E "s/\?edge-cache-token=[^\"' ]*/$TOKEN/g" "$TARGET_DIR/TF-1.m3u8"
             echo "Updated TF-1.m3u8"
           else
             echo "Warning: TF-1.m3u8 not found at $TARGET_DIR/TF-1.m3u8"
           fi
 
           if [ -f "$TARGET_DIR/TF-6.m3u8" ]; then
-            sed -i -E "s/\?edge-cache=[^\"' ]*/$TOKEN/g" "$TARGET_DIR/TF-6.m3u8"
+            sed -i -E "s/\?edge-cache-token=[^\"' ]*/$TOKEN/g" "$TARGET_DIR/TF-6.m3u8"
             echo "Updated TF-6.m3u8"
           else
             echo "Warning: TF-6.m3u8 not found at $TARGET_DIR/TF-6.m3u8"
