@@ -19,23 +19,33 @@ jobs:
           # 1. Download the target playlist file
           curl -s "https://raw.githubusercontent.com/srhady/toffee-bd/refs/heads/main/toffee_playlist.m3u" -o source.m3u
 
-          # 2. Extract the edge-cache token using python for maximum reliability
+          # 2. Print the first 40 lines to the log for easy debugging if it fails
+          echo "=== SHOWING SOURCE PLAYLIST SNAPSHOT ==="
+          head -n 40 source.m3u
+          echo "========================================"
+
+          # 3. Flexible extraction logic
           TOKEN=$(python3 -c '
           import re
           
           with open("source.m3u", "r", encoding="utf-8") as f:
-              lines = f.readlines()
+              content = f.read()
           
           token = ""
-          for i, line in enumerate(lines):
-              # Look for your specific channel ID anywhere on the line
-              if "V__o054BObUt2AG6LL5C" in line and (i + 1) < len(lines):
-                  next_line = lines[i + 1].strip()
-                  # Find the ?edge-cache=... portion in the URL line
-                  match = re.search(r"(\?edge-cache=[^\s\"'\''#]+)", next_line)
-                  if match:
-                      token = match.group(1)
-                      break
+          
+          # Strategy A: Look specifically around your channel ID block
+          if "V__o054BObUt2AG6LL5C" in content:
+              # Grab the chunk of text right after your channel ID to find its URL
+              segment = content.split("V__o054BObUt2AG6LL5C")[1][:1000]
+              match = re.search(r"(\?edge-cache=[^\s\"'\''#]+)", segment)
+              if match:
+                  token = match.group(1)
+          
+          # Strategy B: If ID is missing/changed, fallback to grabbing ANY fresh edge-cache token in the file
+          if not token:
+              match = re.search(r"(\?edge-cache=[^\s\"'\''#]+)", content)
+              if match:
+                  token = match.group(1)
           
           print(token)
           ')
@@ -47,7 +57,7 @@ jobs:
             exit 1
           fi
 
-          # 3. Update TF-1.m3u8 and TF-6.m3u8 inside playlist/TF/
+          # 4. Update TF-1.m3u8 and TF-6.m3u8 inside playlist/TF/
           TARGET_DIR="playlist/TF"
           
           if [ -f "$TARGET_DIR/TF-1.m3u8" ]; then
