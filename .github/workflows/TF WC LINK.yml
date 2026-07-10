@@ -12,18 +12,20 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v4
 
       - name: Fetch Latest Source Playlist and Extract Edge Cache
         run: |
           # 1. Download the target playlist file
           curl -s -A "Mozilla/5.0" "https://raw.githubusercontent.com/srhady/toffee-bd/refs/heads/main/toffee_playlist.m3u" -o source.m3u
 
-          # 2. Write Python script to specifically extract edge-cache-token strings
-          cat << 'EOF' > extract.py
+          # 2. Run a clean script to extract the token AND safely update the files
+          cat << 'EOF' > update_playlists.py
 import re
+import os
 import sys
 
+# Step A: Extract Token
 try:
     with open("source.m3u", "r", encoding="utf-8") as f:
         content = f.read()
@@ -33,7 +35,7 @@ except Exception as e:
 
 token = ""
 
-# Strategy A: Target the block right after your channel ID
+# Look specifically around your channel ID block first
 if "V__o054BObUt2AG6LL5C" in content:
     try:
         segment = content.split("V__o054BObUt2AG6LL5C")[1][:1200]
@@ -43,43 +45,46 @@ if "V__o054BObUt2AG6LL5C" in content:
     except Exception:
         pass
 
-# Strategy B Fallback: Grab the first valid edge-cache-token string anywhere in the playlist
+# Fallback: Grab the first valid token anywhere in the playlist
 if not token:
     match = re.search(r"edge-cache-token=[^\s\"'#]+", content)
     if match:
         token = "?" + match.group(0)
 
-if token:
-    print(token)
+if not token:
+    print("Error: Could not extract edge-cache-token from source.", file=sys.stderr)
+    sys.exit(1)
+
+print(f"Extracted Token successfully.")
+
+# Step B: Safe processing over your local target files
+target_files = ["playlist/TF/TF-1.m3u8", "playlist/TF/TF-6.m3u8"]
+
+for file_path in target_files:
+    if os.path.exists(file_path):
+        with open(file_path, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+        
+        updated_lines = []
+        for line in lines:
+            # If the line contains a live stream URL link, replace or append token
+            if "toffeelive.com" in line or ".m3u8" in line:
+                # Strip out any pre-existing query tokens or parameters cleanly
+                base_url = line.strip().split("?")[0]
+                updated_lines.append(base_url + token + "\n")
+            else:
+                updated_lines.append(line)
+                
+        with open(file_path, "w", encoding="utf-8") as f:
+            f.writelines(updated_lines)
+        print(f"Updated: {file_path}")
+    else:
+        print(f"Warning: File not found at {file_path}")
 EOF
 
-          # 3. Execute script and register token
-          TOKEN=$(python3 extract.py)
+          # 3. Execute the single process script
+          python3 update_playlists.py
 
-          echo "Extracted Token: $TOKEN"
-
-          if [ -z "$TOKEN" ]; then
-            echo "Error: Could not extract edge-cache-token from source."
-            exit 1
-          fi
-
-          # 4. Replace token safely inside target files
-          TARGET_DIR="playlist/TF"
-          
-          if [ -f "$TARGET_DIR/TF-1.m3u8" ]; then
-            sed -i -E "s/\?edge-cache-token=[^\"' ]*/$TOKEN/g" "$TARGET_DIR/TF-1.m3u8"
-            echo "Updated TF-1.m3u8"
-          else
-            echo "Warning: TF-1.m3u8 not found at $TARGET_DIR/TF-1.m3u8"
-          fi
-
-          if [ -f "$TARGET_DIR/TF-6.m3u8" ]; then
-            sed -i -E "s/\?edge-cache-token=[^\"' ]*/$TOKEN/g" "$TARGET_DIR/TF-6.m3u8"
-            echo "Updated TF-6.m3u8"
-          else
-            echo "Warning: TF-6.m3u8 not found at $TARGET_DIR/TF-6.m3u8"
-          fi
-          
       - name: Commit and Push Changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
@@ -87,7 +92,6 @@ EOF
           
           git add playlist/TF/TF-1.m3u8 playlist/TF/TF-6.m3u8
           
-          # Only commit if changes exist to avoid empty commit failures
           if ! git diff --cached --quiet; then
             git commit -m "Automated Sync: Update edge-cache parameters"
             git push
