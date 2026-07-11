@@ -1,0 +1,42 @@
+name: Auto Update TF Playlists
+
+on:
+  schedule:
+    # Runs every 45 minutes
+    - cron: '*/45 * * * *'
+  workflow_dispatch: # Allows you to run it manually from the Actions tab
+
+jobs:
+  update-playlists:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Required to push the updated files back to your repo
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Ensure output directory exists
+        run: mkdir -p playlist/TF
+
+      - name: Fetch Remote Playlists
+        run: |
+          curl -sLf "https://sm-monirul.top/fifa/play/toffee1.m3u8" -o playlist/TF/TF-1.m3u8
+          curl -sLf "https://sm-monirul.top/fifa/play/toffee2.m3u8" -o playlist/TF/TF-2.m3u8
+          curl -sLf "https://sm-monirul.top/fifa/play/toffee3.m3u8" -o playlist/TF/TF-6.m3u8
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Stage the specific updated playlist files
+          git add playlist/TF/TF-1.m3u8 playlist/TF/TF-2.m3u8 playlist/TF/TF-6.m3u8
+          
+          # Only commit and push if there are actually changes to avoid failing the workflow
+          if ! git diff --staged --quiet; then
+            git commit -m "Auto-update TF-1, TF-2, and TF-6 playlist links"
+            git push
+          else
+            echo "No changes to commit."
+          fi
