@@ -1035,10 +1035,10 @@ http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/641956.ts
 http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/2279.ts
 #EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/2278.jpg" group-title="Server 5-FIFA",UK Fox News HD
 http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/2278.ts
-#EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/735107.jpg" group-title="Server 5-FIFA",US (Peacock 012) | High Diving World Cup: Italy 1 (2026-07-11 05:00:00)
-http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/735107.ts
-#EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/735120.jpg" group-title="Server 5-FIFA",US (Peacock 025) | High Diving World Cup: Italy 2 (2026-07-12 05:00:00)
-http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/735120.ts
+#EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/735103.jpg" group-title="Server 5-FIFA",US (Peacock 008) | High Diving World Cup: Italy 1 (2026-07-11 05:00:00)
+http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/735103.ts
+#EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/735116.jpg" group-title="Server 5-FIFA",US (Peacock 021) | High Diving World Cup: Italy 2 (2026-07-12 05:00:00)
+http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/735116.ts
 #EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/21561.jpg" group-title="Server 5-FIFA",USA Fox Business (SD)
 http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/21561.ts
 #EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/3730.jpg" group-title="Server 5-FIFA",USA FOX Business Network (SHD)
@@ -1095,13 +1095,13 @@ http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/40630.ts
 http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/429798.ts
 #EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/638806.jpg" group-title="Server 5-FIFA",USA LiveNOW from FOX
 http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/638806.ts
-#EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/21825.jpg" group-title="Server 5-FIFA",Soccer05: France vs Morocco ( FOX Network Feed ) @ 4:00 pm
+#EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/21825.jpg" group-title="Server 5-FIFA",Soccer05: Spain vs Belgium ( FOX Network Feed ) @ 3:00 pm
 http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/21825.ts
-#EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/21826.jpg" group-title="Server 5-FIFA",Soccer06: France vs Morocco ( Telemundo Feed ) @ 4:00 pm
+#EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/21826.jpg" group-title="Server 5-FIFA",Soccer06: Spain vs Belgium ( Telemundo Feed ) @ 3:00 pm
 http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/21826.ts
-#EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/21827.jpg" group-title="Server 5-FIFA",Soccer07: France vs Morocco ( Telemundo Deportes En Vivo Feed ) @ 4:00 pm
+#EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/21827.jpg" group-title="Server 5-FIFA",Soccer07: Spain vs Belgium ( Telemundo Deportes En Vivo Feed ) @ 3:00 pm
 http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/21827.ts
-#EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/21828.jpg" group-title="Server 5-FIFA",Soccer08: France vs Morocco ( FOX One Feed ) @ 4:00 pm
+#EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/21828.jpg" group-title="Server 5-FIFA",Soccer08: Spain vs Belgium ( FOX One Feed ) @ 3:00 pm
 http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/21828.ts
 #EXTINF:-1 tvg-logo="https://static.realiptv.to/snapshots/3889.jpg" group-title="Server 5-FIFA",USA Telemundo 51 WSCV
 http://s.rocketdns.info:8080/monstercable/Dq6jjknxCr/3889.ts
