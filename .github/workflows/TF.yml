@@ -1,9 +1,6 @@
 name: UPDATE TF LINK IN WC PLAYLIST
 
 on:
-  schedule:
-    # Runs automatically every 30 minutes.
-    - cron: '*/30 * * * *'
   workflow_dispatch: # Allows you to run the workflow manually from the Actions tab
 
 permissions:
