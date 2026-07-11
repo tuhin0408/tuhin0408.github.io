@@ -2,7 +2,7 @@ name: UPDATE TF LINK IN WC PLAYLIST
 
 on:
   schedule:
-    # Runs automatically every 6 hours. You can adjust the cron schedule if needed.
+    # Runs automatically every 30 minutes.
     - cron: '*/30 * * * *'
   workflow_dispatch: # Allows you to run the workflow manually from the Actions tab
 
@@ -47,10 +47,11 @@ jobs:
 
           # Extract the new URLs
           url_ch1 = get_url_for_channel(source_content, "FIFA WC CHANNEL 1")
+          url_ch2 = get_url_for_channel(source_content, "FIFA WC CHANNEL 2")
           url_ch6 = get_url_for_channel(source_content, "FIFA WC CHANNEL 6")
 
-          if not url_ch1 or not url_ch6:
-              print("Could not find the target channels in the source playlist. Aborting.")
+          if not url_ch1 or not url_ch2 or not url_ch6:
+              print("Could not find all the target channels in the source playlist. Aborting.")
               exit(1)
 
           # Read your local file
@@ -72,6 +73,7 @@ jobs:
 
           # Update the URLs for your specific channels
           replace_url_in_local(local_lines, "🇧🇩 TOFFEE LIVEᵇᵈᶦˣ", url_ch1)
+          replace_url_in_local(local_lines, "🇧🇩 TOFFEE LIVE 2ᵇᵈᶦˣ", url_ch2)
           replace_url_in_local(local_lines, "TOFFEE Match Recapeᵇᵈᶦˣ", url_ch6)
 
           # Write the untouched lines + updated URLs back to your local file
