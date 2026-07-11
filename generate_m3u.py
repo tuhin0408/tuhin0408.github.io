@@ -19,7 +19,7 @@ def fetch_and_filter():
     m3u_lines = ["#EXTM3U\n"]
     
     # Target keywords for matching channels
-    keywords = ["worldcup", "world cup", "fifa world cup", "fifa worldcup", "fussball", "TSN1", "TSN2", "TSN3", "tyc sports", "fox", "telemundo", "now hk", "now 616"]
+    keywords = ["Soccer01", "Soccer02", "Soccer03", "Soccer04", "Soccer05", "worldcup", "world cup", "fifa world cup", "fifa worldcup", "fussball", "TSN1", "TSN2", "TSN3", "tyc sports", "fox", "telemundo", "now hk", "now 616"]
 
     for idx, srv in enumerate(servers, start=1):
         base_url = srv["url"].rstrip("/")
