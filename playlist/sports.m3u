@@ -2,10 +2,13 @@
 #======  BANGLADESH ============
 #EXTINF:-1  tvg-logo="https://i.imgur.com/53aSeDH.png",🇧🇩 TOFFEE LIVEᵇᵈᶦˣ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
-https://prod-cdn01-live.toffeelive.com/live/FIFA-2026/sst/index.m3u8?edge-cache-token=Expires=1783724370~Starts=1783717170~URLPrefix=aHR0cHM6Ly9wcm9kLWNkbjAxLWxpdmUudG9mZmVlbGl2ZS5jb20~Data=eyJzdWJzY3JpYmVyX2lkIjoiM2M5ZTQwYTctYzk5NC00YzlmLWFkMTYtODkyMGNlNzdjYzM2In0~Signature=Y0mV7q6uiGPv1AC8h6MdleoRZU9T-N18-PI9GQcCiVvdmoDpHEgTOzFr13I6pm2Rrpge9alCVs7c1TX-bvO-DA
+https://prod-cdn01-live.toffeelive.com/live/FIFA-2026/sst/index.m3u8?edge-cache-token=Expires=1783757863~Starts=1783750663~URLPrefix=aHR0cHM6Ly9wcm9kLWNkbjAxLWxpdmUudG9mZmVlbGl2ZS5jb20~Data=eyJzdWJzY3JpYmVyX2lkIjoiM2M5ZTQwYTctYzk5NC00YzlmLWFkMTYtODkyMGNlNzdjYzM2In0~Signature=V7ZoP3RZWXg3KIqGLqce2nn_2CRhAaO-xMmzSGrdGU1mDL0mgsO3q9AOrJsmp49nYTHqtXcKf_38WHOUKgGIAw
+#EXTINF:-1  tvg-logo="https://i.imgur.com/53aSeDH.png",🇧🇩 TOFFEE LIVE 2ᵇᵈᶦˣ
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
+https://prod-cdn01-live.toffeelive.com/live/FIFA-2026-2/sst/index.m3u8?edge-cache-token=Expires=1783757863~Starts=1783750663~URLPrefix=aHR0cHM6Ly9wcm9kLWNkbjAxLWxpdmUudG9mZmVlbGl2ZS5jb20~Data=eyJzdWJzY3JpYmVyX2lkIjoiM2M5ZTQwYTctYzk5NC00YzlmLWFkMTYtODkyMGNlNzdjYzM2In0~Signature=V7ZoP3RZWXg3KIqGLqce2nn_2CRhAaO-xMmzSGrdGU1mDL0mgsO3q9AOrJsmp49nYTHqtXcKf_38WHOUKgGIAw
 #EXTINF:-1  tvg-logo="https://i.imgur.com/7lPOTCc.png",TOFFEE Match Recapeᵇᵈᶦˣ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
-https://prod-cdn01-live.toffeelive.com/live/FIFA-2026-6/index.m3u8?edge-cache-token=Expires=1783724370~Starts=1783717170~URLPrefix=aHR0cHM6Ly9wcm9kLWNkbjAxLWxpdmUudG9mZmVlbGl2ZS5jb20~Data=eyJzdWJzY3JpYmVyX2lkIjoiM2M5ZTQwYTctYzk5NC00YzlmLWFkMTYtODkyMGNlNzdjYzM2In0~Signature=Y0mV7q6uiGPv1AC8h6MdleoRZU9T-N18-PI9GQcCiVvdmoDpHEgTOzFr13I6pm2Rrpge9alCVs7c1TX-bvO-DA
+https://prod-cdn01-live.toffeelive.com/live/FIFA-2026-6/index.m3u8?edge-cache-token=Expires=1783757863~Starts=1783750663~URLPrefix=aHR0cHM6Ly9wcm9kLWNkbjAxLWxpdmUudG9mZmVlbGl2ZS5jb20~Data=eyJzdWJzY3JpYmVyX2lkIjoiM2M5ZTQwYTctYzk5NC00YzlmLWFkMTYtODkyMGNlNzdjYzM2In0~Signature=V7ZoP3RZWXg3KIqGLqce2nn_2CRhAaO-xMmzSGrdGU1mDL0mgsO3q9AOrJsmp49nYTHqtXcKf_38WHOUKgGIAw
 #EXTINF:-1 tvg-logo="https://i.imgur.com/rC9MoX7.png",🇧🇩 SomoyTVᵇᵈᶦˣ
 http://198.195.239.50:8095/somoyTv/tracks-v1a1/mono.m3u8
 #====== Bioscope World Cup ============
@@ -391,11 +394,11 @@ http://114.130.57.233:8080/BTV/video.m3u8?token=SkQuhAXZxgBan1
 https://flussonic.deltainfonet.com/01_Tsports_HD/tracks-v1a1/mono.m3u8
 #====== Toffee World Cup ============
 #EXTINF:-1 tvg-id="toffee" tvg-name="Fifa World Cup" tvg-logo="https://i.imgur.com/53aSeDH.png" group-title="Sports Channels",Toffee
-https://toffee-fifa.sm-monirul.top/sm/toffee1.m3u8
+http://sm-monirul.top/fifa/play/toffee1.m3u8
 #EXTINF:-1 tvg-id="toffee" tvg-name="Fifa World Cup" tvg-logo="https://i.imgur.com/53aSeDH.png" group-title="Sports Channels",Toffee 1
-https://toffee-fifa.sm-monirul.top/sm/toffee2.m3u8
+http://sm-monirul.top/fifa/play/toffee3.m3u8
 #EXTINF:-1 tvg-id="toffee" tvg-name="Fifa World Cup" tvg-logo="https://assets-prod.services.toffeelive.com/w_480,q_75,f_webp/V__o054BObUt2AG6LL5C/posters/84590b8d-6430-4ba8-a0a5-757bf2f57c05.png" group-title="Sports Channels",Toffee 2
-https://toffee-fifa.sm-monirul.top/sm/match_rewatch.m3u8
+http://sm-monirul.top/fifa/play/toffee2.m3u8
 #======  World Cup ============
 #EXTINF:-1 tvg-id="t sports" tvg-name="T-Sports" tvg-logo="https://raw.githubusercontent.com/sm-monirulislam/SM-Live-TV/main/Script/world_cup.png" group-title="world cup",Football World Cup
 http://103.165.93.31:8095/tsports/video.m3u8
@@ -405,15 +408,3 @@ http://180.94.28.28:8097/Fifa-2026/index.m3u8
 http://103.165.93.31:8095/unt-s/video.m3u8
 #EXTINF:-1  tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/e9/CazeTV2022.svg", Caze TV Brazil 🇧🇷
 https://dfr80qz435crc.cloudfront.net/MNOP/Amagi/Caze/Caze_TV_BR/Caze_TV.m3u8
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/e9/CazeTV2022.svg" ,Caze TV HD
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=34475edab991ad5e92548aebd710410a:501b209cccd323ac00bf5ac15b406cb4
-https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/3ynrpdanq2/out/v1/81fd4c26584044d2b1a1cc5b32fa9af0/cenc.mpd
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/e9/CazeTV2022.svg" ,Caze TV FHD
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=1223d5105392cabf1bb9c2c1fdf6539a:340b409f4b8f78a343e0363a7938df38
-https://otte-qw.live.pv-cdn.net/lhr-nitro/live/clients/dash/enc/iayg0kyrof/out/v1/91dc04907f56415b897faccfa9d252da/cenc.mpd
