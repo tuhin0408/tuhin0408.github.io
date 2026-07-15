@@ -2,7 +2,7 @@
 #======  BANGLADESH ============
 #EXTINF:-1  tvg-logo="https://i.imgur.com/53aSeDH.png",🇧🇩 TOFFEE LIVEᵇᵈᶦˣ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
-https://prod-cdn01-live.toffeelive.com/live/FIFA-2026/sst/0/master_1500.m3u8?hdntl=Expires=1784138990~_GO=Generated~URLPrefix=aHR0cHM6Ly9wcm9kLWNkbjAxLWxpdmUudG9mZmVlbGl2ZS5jb20~Data=eyJzdWJzY3JpYmVyX2lkIjoiMjk2NmI0NzEtNTVlMS00ZWY0LThjNzQtMzdlYjgzMDllMjNjIn0~Signature=AWucVz5zoyFG9GoZWJ5H9TY2PBlU-s6RqOmT0STcs4Pm4gBHlDpjlkPbcI0Qc_eVbi7nkBY3-QcqI8vF2tg_atHaJs4P
+#https://prod-cdn01-live.toffeelive.com/live/FIFA-2026/sst/0/master_1500.m3u8?hdntl=Expires=1784138990~_GO=Generated~URLPrefix=aHR0cHM6Ly9wcm9kLWNkbjAxLWxpdmUudG9mZmVlbGl2ZS5jb20~Data=eyJzdWJzY3JpYmVyX2lkIjoiMjk2NmI0NzEtNTVlMS00ZWY0LThjNzQtMzdlYjgzMDllMjNjIn0~Signature=AWucVz5zoyFG9GoZWJ5H9TY2PBlU-s6RqOmT0STcs4Pm4gBHlDpjlkPbcI0Qc_eVbi7nkBY3-QcqI8vF2tg_atHaJs4P
 #EXTINF:-1  tvg-logo="https://i.imgur.com/7lPOTCc.png",TOFFEE Match Recapeᵇᵈᶦˣ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; Redmi S2 Build/PKQ1.181203.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.79 Mobile Safari/537.36
 #https://prod-cdn01-live.toffeelive.com/live/FIFA-2026-6/index.m3u8?edge-cache-token=Expires=1783828115~Starts=1783820915~URLPrefix=aHR0cHM6Ly9wcm9kLWNkbjAxLWxpdmUudG9mZmVlbGl2ZS5jb20~Data=eyJzdWJzY3JpYmVyX2lkIjoiOTQ2YmNmNTQtZTAxZC00NjkzLThiYTQtMzExMTRiZjQxMjJmIn0~Signature=OEVaPm-aI5SrQlSvQMf2Ge2iBgfFnPeT5aAUN0hAzxovYz1FdVhVxdEz7hOlxdUKlMv5f4Bqvvqx6wzfYgWnCA
@@ -21,10 +21,10 @@ http://103.165.93.31:8095/ptv/tracks-v1a1/mono.m3u8
 https://fifa-stream-01.bioscopelive.com/out/v1/60e7608404004b1186261497b404630b/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/0oICE2u.png",I SCREEN HDᵇᵈᶦˣ
 #EXTVLCOPT:http-referrer=https://iscreen.com.bd/
-https://tc-sg.rockstreamer.com/v1/019ed91616121ea540a8171c8e801f/019ed92ac80315fc600b1796d4ad8b/main.m3u8
+#https://tc-sg.rockstreamer.com/v1/019ed91616121ea540a8171c8e801f/019ed92ac80315fc600b1796d4ad8b/main.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/C0KQZLV.png",Binge+ᵇᵈᶦˣ
 #EXTVLCOPT:http-referrer=https://iscreen.com.bd/
-https://m3u-tvb.pages.dev/ics.m3u8
+#https://m3u-tvb.pages.dev/ics.m3u8
 
 #======  NOW TV ============
 #EXTINF:-1 tvg-logo="https://i.imgur.com/xarBMwe.png",NOW Sports 616 4K¹
