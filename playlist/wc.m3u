@@ -73,24 +73,30 @@ https://raw.githubusercontent.com/tuhin0408/OopsTv/refs/heads/main/s3/2095901.m3
 #EXTINF:-1 tvg-logo="https://i.imgur.com/hDmosMm.png",FS1 (Events only)
 http://vca.easy747.com:80/live/donad220/8U01MGV/1436346.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/hDmosMm.png",FS1 FHD¹
-http://rgkkw.live/live/1Aoen7elp5/IgMJ60tmAa/751354.ts
+http://a1.media1.london:8080/aUhtV1JFQVNsV3cyR25DSng1a3kremF5K0dsZGJuVE9SaHViVVFYVUdQZkxIZ3lGTllRLzZMOHYyNG81MGVPYQ
 #EXTINF:-1 tvg-logo="https://i.imgur.com/hDmosMm.png",FS1 FHD²
-http://starhub.pro/live/farhat-3379/67897-913379/751354.ts
+http://rgkkw.live/live/1Aoen7elp5/IgMJ60tmAa/751354.ts
 #EXTINF:-1 tvg-logo="https://i.imgur.com/hDmosMm.png",FS1 FHD³
+http://starhub.pro/live/farhat-3379/67897-913379/751354.ts
+#EXTINF:-1 tvg-logo="https://i.imgur.com/hDmosMm.png",FS1 FHD⁴
 https://1nyaler.streamhostingcdn.top/stream/26/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/olHih83.png",FS2 FHD¹
-http://rgkkw.live/live/1Aoen7elp5/IgMJ60tmAa/751355.ts
+http://a1.media1.london:8080/aUhtV1JFQVNsV3cyR25DSng1a3krN25BZnRXT2JSbzBoVmFoaVJmTkQzSm1ycWkrQURKYTd4YVp1a3g0bkZqOQ
 #EXTINF:-1 tvg-logo="https://i.imgur.com/olHih83.png",FS2 FHD²
+http://rgkkw.live/live/1Aoen7elp5/IgMJ60tmAa/751355.ts
+#EXTINF:-1 tvg-logo="https://i.imgur.com/olHih83.png",FS2 FHD³
 http://starhub.pro/live/farhat-3379/67897-913379/751355.ts
 
 #======  TSN ============
 #EXTINF:-1 tvg-logo="https://i.imgur.com/N09UZWA.png",TSN1 FHD¹
-http://vca.easy747.com:80/live/donad220/8U01MGV/42917.m3u8
+http://a1.media1.london:8080/aUhtV1JFQVNsV3cyR25DSng1a3krL2NoOTZKOUlsc3pKc1NPOS9jMDJEV0pwYWpwbG54Yjdwb2pFWWFLUlBwOA
 #EXTINF:-1 tvg-logo="https://i.imgur.com/N09UZWA.png",TSN1 FHD²
-http://rgkkw.live/live/1Aoen7elp5/IgMJ60tmAa/748388.ts
+http://vca.easy747.com:80/live/donad220/8U01MGV/42917.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/N09UZWA.png",TSN1 FHD³
-http://starhub.pro/live/farhat-3379/67897-913379/748388.ts
+http://rgkkw.live/live/1Aoen7elp5/IgMJ60tmAa/748388.ts
 #EXTINF:-1 tvg-logo="https://i.imgur.com/N09UZWA.png",TSN1 FHD⁴
+http://starhub.pro/live/farhat-3379/67897-913379/748388.ts
+#EXTINF:-1 tvg-logo="https://i.imgur.com/N09UZWA.png",TSN1 FHD⁵
 http://fastshare1.com/live/25711345/late8airline/748388.ts
 #EXTINF:-1 tvg-logo="https://i.imgur.com/N09UZWA.png",TSN1 HD¹
 https://raw.githubusercontent.com/tuhin0408/OopsTv/refs/heads/main/spo-s5-n/902070.m3u8
