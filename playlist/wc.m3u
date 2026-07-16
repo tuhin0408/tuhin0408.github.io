@@ -26,13 +26,19 @@ https://plmxcv-rtyhbnqa.rockstreamer.com/v1/019ee554d6cc1567ee93172b12d63f/019ee
 
 #======  NOW TV ============
 #EXTINF:-1 tvg-logo="https://i.imgur.com/xarBMwe.png",NOW Sports 616 4K¹
+http://a1.media1.london:8080/aUhtV1JFQVNsV3cyR25DSng1a3krM3lpNlN0ckZKQTBFK21KZllhcjVja3NjTE83R0NLTjFTcHNoS2ZZUG1zeA
+#EXTINF:-1 tvg-logo="https://i.imgur.com/xarBMwe.png",NOW Sports 616 4K²
+http://a1.media1.london:8080/aUhtV1JFQVNsV3cyR25DSng1a3krNzBlSVVubW9vTkkxM1M2VnJzRHIrL2NNVnl5Vm5iZ0xvTFk5NTBVZ1AyeA
+#EXTINF:-1 tvg-logo="https://i.imgur.com/xarBMwe.png",NOW Sports 616 4K³
 http://rgkkw.live/live/1Aoen7elp5/IgMJ60tmAa/745270.ts
-#EXTINF:-1 tvg-logo="https://i.imgur.com/xarBMwe.png",NOW Sports 616 4K²
+#EXTINF:-1 tvg-logo="https://i.imgur.com/xarBMwe.png",NOW Sports 616 4K⁴
 http://starhub.pro/live/farhat-3379/67897-913379/745270.ts
-#EXTINF:-1 tvg-logo="https://i.imgur.com/xarBMwe.png",NOW Sports 616 4K²
+#EXTINF:-1 tvg-logo="https://i.imgur.com/xarBMwe.png",NOW Sports 616 4K⁵
 http://fastshare1.com/live/25711345/late8airline/745270.ts
 
 #======  BBC ============
+#EXTINF:-1 tvg-logo="",BBC FHD
+http://a1.media1.london:8080/aUhtV1JFQVNsV3cyR25DSng1a3krOFh2emxBYUlmeXUrbzhZWStLRVViRzZuVlV0d2owSlM2ZzFCOHRxNERDKw
 #EXTINF:-1 tvg-logo="",BBC 4K (Events Only)
 http://vca.easy747.com:80/live/donad220/8U01MGV/1436345.m3u8
 
