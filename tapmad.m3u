@@ -1,8 +1,12 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-id="tapmad-16711" tvg-logo="https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17892918541020x576.jpg" group-title="Cricket", Edinburgh Castle Rockers vs Amsterdam Flames | European T20 Premier League 2026
+#EXTINF:-1 tvg-id="tapmad-16954" tvg-logo="https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17892143281020x576.jpg" group-title="Football", Levante vs Barcelona | LaLiga 2026/27
+https://saseries.akamaized.net/hls/live/2110097/56408643-tapMad/master.m3u8
+#EXTINF:-1 tvg-id="tapmad-16712" tvg-logo="https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17892921111020x576.jpg" group-title="Cricket", Belfast Wolves vs Glasgow Cosmic | European T20 Premier League 2026
 https://saseries.akamaized.net/hls/live/2110097/ZIMvsIND-3827e1/master.m3u8
-#EXTINF:-1 tvg-id="tapmad-17152" tvg-logo="https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17892435821020x576.jpg" group-title="Boat Racing", Session 3 - Group Stages Live | E1 Series 2026
+#EXTINF:-1 tvg-id="tapmad-17470" tvg-logo="https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17892481601020x576.jpg" group-title="Cricket", India vs Afghanistan | India Tour of Afghanistan 2026
+https://saseries.akamaized.net/hls/live/2110097/2353jkiL-tapmad/master.m3u8
+#EXTINF:-1 tvg-id="tapmad-17162" tvg-logo="https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17892440141020x576.jpg" group-title="Boat Racing", Session 5 - Finals Live | E1 Series 2026
 https://bpl24middleeast.akamaized.net/hls/live/2109311/j15klM//master.m3u8
-#EXTINF:-1 tvg-id="tapmad-16953" tvg-logo="https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17892142251020x576.jpg" group-title="Football", Celta vs Malaga | LaLiga 2026/27
+#EXTINF:-1 tvg-id="tapmad-16955" tvg-logo="https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17892144341020x576.jpg" group-title="Football", Getafe vs Deportivo | LaLiga 2026/27
 https://saseries.akamaized.net/hls/live/2110097/tapmad123321/master.m3u8
